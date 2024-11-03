@@ -1,6 +1,10 @@
+import './style.css';
+
 const SecondComponent = () => {
     return (
-        <div>Second Component</div>
+    <>
+        <div className="child">Second Component</div>
+    </>
     )
 }
 
