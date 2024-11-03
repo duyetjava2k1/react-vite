@@ -6,10 +6,11 @@ import './App.css'
 const App = () => {
     const [count, setCount] = useState(0)
 
-    const myFunction = () => {
-        console.log("Arrow function");
+    const MyComponent = () => {
+        return (
+            <div>Java SpingBoot & ReactJS</div>
+        );
     }
-    myFunction();
     return (
         <>
             <div>
@@ -21,6 +22,7 @@ const App = () => {
                 </a>
             </div>
             <h1>Hello world Giang Văn Duyệt</h1>
+            <MyComponent />
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
