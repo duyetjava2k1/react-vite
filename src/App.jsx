@@ -2,15 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MyComponent from './componets/learn/MyComponent'
+import SecondComponent from './componets/learn/SecondComponent'
 
 const App = () => {
-    const [count, setCount] = useState(0)
-
-    const MyComponent = () => {
-        return (
-            <div>Java SpingBoot & ReactJS</div>
-        );
-    }
+    const [count, setCount] = useState(0);
     return (
         <>
             <div>
@@ -23,6 +19,7 @@ const App = () => {
             </div>
             <h1>Hello world Giang Văn Duyệt</h1>
             <MyComponent />
+            <SecondComponent />
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
