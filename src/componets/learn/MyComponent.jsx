@@ -1,6 +1,12 @@
 const MyComponent = () => {
+    const name = "Java SpingBoot"
     return (
-        <div>Java SpingBoot & ReactJS</div>
+        <>
+            <div style={{borderRadius:"10px"}}>{name} & ReactJS</div>
+            <div>{console.log("DuyetJava")}</div>
+        </>
+        
+        
     );
 }
 
