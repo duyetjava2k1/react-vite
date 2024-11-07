@@ -1,4 +1,5 @@
 const TodoData = (props) => {
+    
     const {name, age, data} = props;
     return(
         <>

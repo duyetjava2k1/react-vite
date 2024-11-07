@@ -1,4 +1,7 @@
-const TodoNew = () => {
+const TodoNew = (props) => {
+    console.log(props)
+    const {addNewTodo}  = props
+    addNewTodo('Duyệt');
     return (
         <>
             <div className="todo-new">
