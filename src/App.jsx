@@ -17,7 +17,7 @@ const App = () => {
     return (
         <div className="todo-container">
             <div className="todo-title">Todo List</div>
-            <TodoNew addNewTodo={addNewTodo}/>
+            <TodoNew addNewTodo={addNewTodo} name={name}/>
             <TodoData name={name} age = {age} data = {data} />
             <div className='todo-image'>
                 <img src={reactLodo} alt="" className='logo'/>
