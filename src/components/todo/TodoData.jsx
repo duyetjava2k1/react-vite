@@ -1,15 +1,16 @@
 const TodoData = (props) => {
-    
-    const {name, age, data} = props;
-    return(
+    const { todoList, handleDelete } = props;
+    const listItem = todoList.map((item) =>
+        <div key={item.id} className="todo-data-row">
+            <div>{item.value}</div>
+            <button onClick={() => handleDelete(item.id)}>Delete</button>
+        </div>
+    )
+
+    return (
         <>
             <div className="todo-data">
-                <div>Watching Youtobe</div>
-                <div>Learning React</div>
-                <div>{name}</div>
-                <div>{age}</div>
-                <div>{data.address}</div>
-                <div>{data.country}</div>
+                {listItem}
             </div>
         </>
     )
